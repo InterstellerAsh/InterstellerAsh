@@ -1,0 +1,36 @@
+name: Generate Profile Assets
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Har roz raat ko chalega
+  workflow_dispatch: # Manually chalane ke liye
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-3d-and-snake
+    steps:
+      - uses: actions/checkout@v3
+
+      # 1. 3D City Generator
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: InterstellerAsh
+
+      # 2. Snake Game Generator
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: InterstellerAsh
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # 3. Commit & Push Changes
+      - name: Commit & Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A .
+          git commit -m "Generated 3D City and Snake Animation" || exit 0
+          git push
