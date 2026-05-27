@@ -21,13 +21,12 @@
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-view.svg" alt="Ashish's 3D City" width="100%" />
 </p>
-<!-- Snake Game Section -->
+
+<!-- Snake Game Section (Fixed & Working) -->
 <h3 align="left">My Contribution Snake:</h3>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com">
-  <source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com">
-  <img alt="github contribution snake animation" src="https://githubusercontent.com" width="100%">
-</picture>
+<p align="center">
+  <img src="./dist/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+</p>
 
 <br/>
 
@@ -37,4 +36,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=interstellerash&show_icons=true&locale=en" alt="interstellerash" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=interstellerash&" alt="interstellerash" /></p>
+
 
