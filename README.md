@@ -19,7 +19,7 @@
 <!-- 3D City Skyline Section -->
 <h3 align="left">My 3D Contribution City:</h3>
 <p align="center">
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Ashish's 3D City" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="Ashish's 3D City" width="100%" />
 </p>
 
 <br/>
