@@ -21,6 +21,13 @@
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-view.svg" alt="Ashish's 3D City" width="100%" />
 </p>
+<!-- Snake Game Section -->
+<h3 align="left">My Contribution Snake:</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com">
+  <source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com">
+  <img alt="github contribution snake animation" src="https://githubusercontent.com" width="100%">
+</picture>
 
 <br/>
 
